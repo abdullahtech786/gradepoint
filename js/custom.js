@@ -2,6 +2,7 @@ function getResult(){
 		var number = document.getElementById('num').value;
 		if(number === ''){
 			document.getElementById('show').innerHTML='<span style="color:red">Haire student!!! Akta number o kopale meleni ??? <br/> By the way,  Type your number First </span>';
+			alert('Field must not be empty');
 		}else if(number >= 33 && number < 40){
 			document.getElementById('show').innerHTML='<span style="color:white">Apni taina tuina pass diyechen <br/> By the way Your Grade is <b>D</b> </span>';
 		}else if(number >= 40 && number < 50){

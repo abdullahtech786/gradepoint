@@ -1,7 +1,8 @@
 function getResult(){
 		var number = document.getElementById('num').value;
-		
-		if(number >= 33 && number < 40){
+		if(number === ''){
+			document.getElementById('show').innerHTML='<span style="color:red">Haire student!!! Akta number o kopale meleni ??? <br/> By the way,  Type your number First </span>';
+		}else if(number >= 33 && number < 40){
 			document.getElementById('show').innerHTML='<span style="color:white">Apni taina tuina pass diyechen <br/> By the way Your Grade is <b>D</b> </span>';
 		}else if(number >= 40 && number < 50){
 			document.getElementById('show').innerHTML='<span style="color:yellow">Apni pass diyechen kintu aro valo korte hobe <br /> By the way Your Grade is <b>C</b> </span> ';
